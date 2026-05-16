@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Career Pilot</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="auth-page">
+<header class="site-header">
+    <div class="shell">
+        <a class="brand" href="/index.html">
+            <span class="brand-badge">CP</span>
+            <span>Career Pilot</span>
+        </a>
+        <div class="nav-inline">
+            <a href="/register.html">Create account</a>
+        </div>
+    </div>
+</header>
+
+<main class="auth-shell">
+    <div class="auth-grid">
+        <section class="auth-copy">
+            <span class="eyebrow">Secure entry point</span>
+            <h1>Resume your career planning flow.</h1>
+            <p>Sign in to update your profile, finish assessments, and review the latest recommendations generated from your data.</p>
+            <div class="stack-list">
+                <span class="tag">Live dashboard sync</span>
+                <span class="tag">Assessment continuity</span>
+                <span class="tag">Recommendation history</span>
+            </div>
+            <ul class="feature-list">
+                <li>JWT-based authentication for SPA-style navigation</li>
+                <li>Profile, assessment, and recommendations in one flow</li>
+                <li>Backend-ready for Spring Security role controls</li>
+            </ul>
+        </section>
+
+        <section class="form-card">
+            <span class="eyebrow">Welcome back</span>
+            <h2>Login</h2>
+            <p class="muted">Use the account you created for your career profile.</p>
+            <form id="login-form" class="field-grid form-stack">
+                <div class="field full">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="student@example.com" required>
+                </div>
+                <div class="field full">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter your password" required>
+                </div>
+                <div class="field full">
+                    <button class="btn" type="submit">Login to dashboard</button>
+                </div>
+            </form>
+            <p class="muted auth-footnote">New here? <a href="/register.html"><strong>Create an account</strong></a>.</p>
+        </section>
+    </div>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

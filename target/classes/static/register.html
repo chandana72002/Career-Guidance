@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Career Pilot</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="auth-page">
+<header class="site-header">
+    <div class="shell">
+        <a class="brand" href="/index.html">
+            <span class="brand-badge">CP</span>
+            <span>Career Pilot</span>
+        </a>
+        <div class="nav-inline">
+            <a href="/login.html">Login</a>
+        </div>
+    </div>
+</header>
+
+<main class="auth-shell">
+    <div class="auth-grid">
+        <section class="auth-copy">
+            <span class="eyebrow">Profile-first onboarding</span>
+            <h1>Open your career decision workspace.</h1>
+            <p>Create an account, then move directly into profile completion and assessment. The recommendation engine needs structured data to be useful.</p>
+            <div class="stack-list">
+                <span class="tag">Quick setup</span>
+                <span class="tag">Role-aware access</span>
+                <span class="tag">Instant JWT session</span>
+            </div>
+            <ul class="feature-list">
+                <li>Role-ready for student, admin, or counselor access</li>
+                <li>Designed to capture career signals early</li>
+                <li>Redirects straight into profile setup after registration</li>
+            </ul>
+        </section>
+
+        <section class="form-card">
+            <span class="eyebrow">New account</span>
+            <h2>Create your account</h2>
+            <p class="muted">The backend should return a JWT and user payload immediately after registration.</p>
+            <form id="register-form" class="field-grid form-stack">
+                <div class="field full">
+                    <label for="fullName">Full name</label>
+                    <input id="fullName" name="fullName" type="text" placeholder="Aarav Mehta" required>
+                </div>
+                <div class="field full">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="aarav@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Minimum 8 characters" required>
+                </div>
+                <div class="field">
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="USER">Student / User</option>
+                        <option value="COUNSELOR">Counselor</option>
+                        <option value="ADMIN">Admin</option>
+                    </select>
+                </div>
+                <div class="field full">
+                    <button class="btn" type="submit">Create account</button>
+                </div>
+            </form>
+            <p class="muted auth-footnote">Already registered? <a href="/login.html"><strong>Sign in</strong></a>.</p>
+        </section>
+    </div>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

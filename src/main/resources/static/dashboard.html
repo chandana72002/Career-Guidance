@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace | Career Pilot</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="app-page">
+<main class="shell page-shell">
+    <aside class="sidebar">
+        <a class="brand" href="/dashboard.html">
+            <span class="brand-badge">CP</span>
+            <span>Career Pilot</span>
+        </a>
+        <p class="sidebar-copy" id="sidebar-copy">Role-aware workspace for students, counselors, and admins.</p>
+        <nav id="dashboard-nav"></nav>
+        <div class="sidebar-note" id="sidebar-note">
+            <span class="status">Workspace</span>
+            <p>Loading role-specific tools.</p>
+        </div>
+    </aside>
+
+    <section class="page-main">
+        <div class="page-title" id="dashboard-hero"></div>
+        <div class="metric-grid" id="dashboard-metrics"></div>
+        <div class="workspace-grid">
+            <section class="content-stack" id="dashboard-primary"></section>
+            <aside class="content-stack" id="dashboard-secondary"></aside>
+        </div>
+    </section>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

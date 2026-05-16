@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment | Career Pilot</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="app-page">
+<main class="shell page-shell">
+    <aside class="sidebar">
+        <a class="brand" href="/dashboard.html">
+            <span class="brand-badge">CP</span>
+            <span>Career Pilot</span>
+        </a>
+        <p class="sidebar-copy">Trait-based assessment tuned for career-fit scoring.</p>
+        <nav>
+            <a href="/dashboard.html">Profile dashboard</a>
+            <a class="is-active" href="/assessment.html">Assessment</a>
+            <a href="/recommendations.html">Recommendations</a>
+            <button data-action="logout" type="button">Logout</button>
+        </nav>
+        <div class="sidebar-note">
+            <span class="status">Assessment tip</span>
+            <p>Answer consistently to give the recommendation engine cleaner signals.</p>
+        </div>
+    </aside>
+
+    <section class="page-main">
+        <div class="page-title">
+            <div>
+                <span class="eyebrow">Assessment engine</span>
+                <h1>Measure the traits behind career fit.</h1>
+                <p>This page expects a default assessment with multiple-choice questions and weighted options from the backend.</p>
+            </div>
+            <div class="status">Traits: analytical, creativity, leadership, communication, technical, problem solving</div>
+        </div>
+
+        <div class="recommendation-grid">
+            <form id="assessment-form" class="question-list">
+                <div id="question-list"></div>
+                <button class="btn" type="submit">Submit assessment</button>
+            </form>
+
+            <aside class="content-stack">
+                <section class="score-band" id="assessment-summary">
+                    <h3>Assessment snapshot</h3>
+                    <p class="muted">Submit your answers to see the latest trait distribution.</p>
+                </section>
+
+                <section class="glass-card">
+                    <h3>What happens next</h3>
+                    <p>After submission, the recommendation engine should update the user’s latest assessment result and use it in future ranking requests.</p>
+                    <div class="panel-actions form-stack-tight">
+                        <a class="btn-soft" href="/recommendations.html">Review recommendations</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/assessment.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations | Career Pilot</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="app-page">
+<main class="shell page-shell">
+    <aside class="sidebar">
+        <a class="brand" href="/dashboard.html">
+            <span class="brand-badge">CP</span>
+            <span>Career Pilot</span>
+        </a>
+        <p class="sidebar-copy">Explainable matches, missing-skill signals, and next-step roadmaps.</p>
+        <nav>
+            <a href="/dashboard.html">Profile dashboard</a>
+            <a href="/assessment.html">Assessment</a>
+            <a class="is-active" href="/recommendations.html">Recommendations</a>
+            <button data-action="logout" type="button">Logout</button>
+        </nav>
+        <div class="sidebar-note">
+            <span class="status">Use the list well</span>
+            <p>Compare matched skills first, then inspect the roadmap before saving a path.</p>
+        </div>
+    </aside>
+
+    <section class="page-main">
+        <div class="page-title">
+            <div>
+                <span class="eyebrow">Recommendation engine</span>
+                <h1>Your best-fit career paths, with reasoning.</h1>
+                <p>Each recommendation card is structured to show compatibility, explanation, skill gap, roadmap steps, and learning resources.</p>
+            </div>
+            <div class="inline-actions">
+                <button class="btn" id="generate-button" type="button">Generate fresh matches</button>
+            </div>
+        </div>
+
+        <div class="recommendation-grid">
+            <section class="rec-list" id="recommendation-list"></section>
+            <aside class="content-stack">
+                <section class="score-band" id="recommendation-summary"></section>
+                <section id="resource-panel"></section>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/recommendations.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+com/datavalley/careerguidance/service/AuthServiceTest.class
+com/datavalley/careerguidance/ai/CareerDatasetModelTest.class
+com/datavalley/careerguidance/security/JwtAuthenticationFilterTest.class
